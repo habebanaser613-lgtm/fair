@@ -107,6 +107,10 @@ h1 {
     border-radius: 15px;
     box-shadow: 0 4px 9px black;
 }
+.search-text::placeholder {
+    color: white;
+    opacity: 0.7;
+}
 
 
 
