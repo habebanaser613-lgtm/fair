@@ -39,6 +39,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    box-shadow:  10px 5px 11px -10px #00000f;
 }
 .con a {
     text-decoration: none;
@@ -51,33 +52,73 @@ body{
     transition: .3s;
 
 }
+.fan .im video ,.ro .im video ,.cr .im video ,.H .im video ,.ph .im video ,.pr .im video ,.si .im video{
+    object-fit:cover;
+    display:flex;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: none;
+}
+.fan:hover ,.ro:hover ,.cr:hover ,.H:hover ,.ph:hover ,.pr:hover ,.si:hover{
+    box-shadow:  10px 5px 11px -10px #00000f;
+    display: flex;
+    background-color: var(--card-bg);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 5px;
+    max-height: 300px;
+} 
+.fan:hover .im img ,.ro:hover .im img ,.cr:hover .im img ,.H:hover .im img ,.ph:hover .im img ,.pr:hover .im img ,.si:hover .im img{
+    display: none;
+}
+.fan:hover .genre ,.cr:hover .genre ,.ph:hover .genre ,.pr:hover .genre ,.ro:hover .genre ,.si:hover .genre ,.H:hover .genre{
+    display: none;
+}
+.fan:hover .im ,.ro:hover .im ,.cr:hover .im ,.ph:hover .im ,.pr:hover .im ,.H:hover .im ,.si:hover .im{
+    margin: 2%;
+    overflow: hidden;
+    width: 96%;
+    aspect-ratio: 2 / 3;
+    height: 96%;
+    border-radius: 10px;
+    max-height: 290px;
+}
+.fan:hover .im video ,.ro:hover .im video , .cr:hover .im video ,.pr:hover .im video ,.ph:hover .im video ,.si:hover .im video ,.H:hover .im video{
+    object-fit:cover;
+    display:flex;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+    visibility: visible;
+    /* pointer-events: none; */
+} 
 .fan{
     background-image: linear-gradient(to right , #98789D, #535294) ;
-    box-shadow:  10px 5px 11px -10px #00000f;
 }
 .cr{
     background-image: linear-gradient(to right , #647066, #0B0B0B) ;
-    box-shadow:  10px 5px 11px -10px #00000f;
 }
 .si{
     background-image: linear-gradient(to right , #C7D9E5, #2F4157) ;
-    box-shadow:  10px 5px 11px -10px #00000f;
 }
 .pr{
     background-image: linear-gradient(to right , #22584C, #051e18) ;
-    box-shadow:  10px 5px 11px -10px #00000f;
 }
 .ro{
     background-image: linear-gradient(to right , #F0B3BA, #C60726) ;
-    box-shadow:  10px 5px 11px -10px #00000f;
 }
 .H{
     background-image: linear-gradient(to right , #DEBB83, #9D6536) ;
-    box-shadow:  10px 5px 11px -10px #00000f;
 }
 .ph{
     background-image: linear-gradient(to right , #A5856E, #1f150f) ;
-    box-shadow:  10px 5px 11px -10px #00000f;
 }
 .fan:hover , .ph:hover , .pr:hover ,.H:hover , .ro:hover , .si:hover , .cr:hover{
     transform: scale(1.03);
