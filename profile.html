@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Library User Profile</title> 
+  <link rel="stylesheet" href="profile.css">
+<link rel="stylesheet" href="navStyle.css">
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head> 
+ 
+<body> 
+  <nav>
+    <span>Book Fair</span>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="author.html">Authors</a>
+      <a href="bookCategories.html">Book Categories</a>
+      <a href="shop.html">Shop And Borrow</a>
+      <a href="summary.html">Summary</a>
+      <a href="contactUs.html">Contact Us</a>
+      <a href="signin.html">sign in</a>
+      <a href="profile.html"  class="active">Profile</a>
+    </div>
+    <a href="" class="Interface-search-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+      </svg>
+      Search Books
+    </a>
+    <button class="theme-toggle" id="themed">🌙 Dark Mode</button>
+  </nav>
+<div class="container"> 
+  <h1> Reading Dashboard</h1> 
+  <div class="grid">
+     <div class="card bg-card">
+  <h2>
+  </h2>
+</div>
+    <div class="card">
+  <h2> Personal Info</h2>
+
+  <img id="avatarPreview" src="https://www.gravatar.com/avatar/?d=mp" class="avatar">
+
+  <label class="upload-btn">
+    Upload Photo
+    <input type="file" accept="image/*" onchange="loadImage(event)">
+  </label>
+
+  <p>Name:</p>
+  <p>Number:</p>
+  <p>Email:</p>
+</div>
+    <div class="card"> 
+      <h2> Preferences</h2> 
+      <p>Interests: Self improvement, Reading, Productivity</p>
+      <p>Notifications: Daily reading reminder</p>
+      <p>Language: English + Arabic</p>   
+      <button onclick="buyBook(this)">Buy Book</button>
+    </div> 
+
+    <div class="card medium">
+      <h2> Currently Reading</h2>
+      <p>dune</p>
+      <p>a time to kill</p>
+      <p>the midnight library</p>
+    </div>
+    <div class="card wide">
+      <h2> Reading Progress</h2>
+      <p>Books Read: 12 Books</p>
+      <p>Progress: 5/10 books this month</p>
+      <p>Yearly Goal: 60% completed</p>
+    </div>
+    <div class="card">
+      <h2> Library Activity</h2>
+      <p>Borrowed Books:<p>
+        <p>The Alchemist — Paulo Coelho</p>
+        <p>Atomic Habits — James Clear</p>
+        <p>Rich Dad Poor Dad — Robert Kiyosaki</p>
+        <p>The Subtle Art of Not Giving a Fck* — Mark Manson<p>
+        </p>Harry Potter and the Sorcerer’s Stone — J.K. Rowling</p>
+      
+      <p>Wishlist:</p>
+      </p>Can't Hurt Me — David Goggins<p>
+      <p>pThink and Grow Rich — Napoleon Hill<p>
+      <p>The 48 Laws of Power — Robert Greene<p>
+    </div>
+    <div class="card">
+      <h2> Monthly Log</h2>
+      <p>Reading days:</p>
+      <p>Books finished:</p>
+    </div>
+    <div class="card">
+  <h2> Stats</h2>
+  <div class="chart-box">
+    <canvas id="statsChart"></canvas>
+  </div>
+</div>
+    <div class="card">
+      <h2> Quotes</h2>
+      <p>“Distractions aren't just distractions. Sometimes, you need them to break the loop.”</p>
+    </div>
+    <div class="card wide">
+      <h2> Notes</h2>
+      <textarea></textarea>
+    </div>
+    <div class="card"> 
+      <h2> Financials</h2> 
+      <p>Fines: $0</p> 
+      <p>Balance: $150</p> 
+    </div> 
+  </div>
+ 
+</div>
+<footer>
+    <p>© 2026 BooK Fair – Reading world in your hands</p>
+</footer>
+
+<script src="script.js"></script> 
+<script src="darkMode.js"></script>
+<script src="profile.js"></script>
+</body> 
+</html>

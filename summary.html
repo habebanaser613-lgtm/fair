@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navStyle.css">
+    <link rel="stylesheet" href="summary.css">
+    <title>Book Gallery Summary </title>
+</head>
+
+<body>
+    <nav>
+        <span>Book Fair</span>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="author.html">Authors</a>
+            <a href="bookCategories.html">Book Categories</a>
+            <a href="shop.html">Shop And Borrow</a>
+            <a href="summary.html" class="active">Summary</a>
+            <a href="contactUs.html">Contact Us</a>
+            <a href="signin.html">sign in</a>
+            <a href="profile.html">Profile</a>
+            </div>
+        <a href="" class="Interface-search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            Search Books
+        </a>
+        <button class="theme-toggle" id="themed">🌙 Dark Mode</button>
+    </nav>
+    
+    <h1>Book Gallery Summary</h1>
+    <input type="text" class="search-text" name="search" id="search" placeholder="search for a Book">
+    <div class="buttons">
+        <button onclick="searchBooks()">
+            Search
+        </button>
+        <button onclick="changeStyle()"> Layout</button>
+    </div>
+    <div class="stats">
+
+        <div class="box">
+            books = 14
+        </div>
+
+        <div class="box">
+            🏷 Classifications = 7
+        </div>
+
+        <div class="box">
+            The most common is The Romance
+        </div>
+
+    </div>
+
+    <div class="summary-box">
+
+        <h2>Summary of the fair</h2>
+
+        <p>The fair includes a collection of books in Fantasy, Romance, Self-improvement,
+         Crime, Philosophy, History and Programming.
+
+        </p>
+
+    </div>
+
+    <h1>Book categories </h1>
+
+    <table>
+
+        <tr>
+            <th>Classification
+            </th>
+            <th>The number of books </th>
+            <th>Example</th>
+        </tr>
+
+        <tr>
+            <td>Fantasy</td>
+            <td>5</td>
+            <td>cruel prince</td>
+        </tr>
+
+        <tr>
+            <td>Romance</td>
+            <td>3</td>
+            <td>The seven years split</td>
+        </tr>
+
+        <tr>
+            <td>Self improvement </td>
+            <td>2</td>
+            <td>The midnight library & Atomic habits</td>
+        </tr>
+
+        <tr>
+            <td>Crime</td>
+            <td>4</td>
+            <td> The reappearance of Rachel price </td>
+        </tr>
+        <tr>
+            <td>Philosophy </td>
+            <td>2</td>
+            <td>Ancient Wisdom</td>
+        </tr>
+        <tr>
+            <td>History </td>
+            <td>2</td>
+            <td>The Silk Roads </td>
+        </tr>
+        <tr>
+            <td>Programming </td>
+            <td>2</td>
+            <td>Clean code </td>
+        </tr>
+
+    </table>
+
+    <h1>book summaries </h1>
+
+
+    <div class="book">
+        <img src="https://m.media-amazon.com/images/I/81Vw9oXXkmL.jpg" width="200" height="200">
+
+        <h2>The Cruel Prince</h2>
+
+        <p> The Cruel Prince (by Holly Black):
+            A dark, political fantasy following Jude, a human girl living in the treacherous world of Faerie. To find
+            her place among the immortal and disdainful folk, she must outsmart the wicked Prince Cardan and navigate a
+            web of betrayal and power struggles.
+
+        </p>
+
+    </div>
+
+    <div class="book">
+        <img src="https://th.bing.com/th/id/R.73ff2560c11dd6056c45ee9c994d64ed?rik=jn1UEGP4A13lLg&riu=http%3a%2f%2fshop.bl.uk%2fcdn%2fshop%2ffiles%2f7_4a9be18e-f3f7-445c-a52f-b5f7c0c98b8e.png%3fv%3d1759926842&ehk=OaScKJ4zfvRVLrIGxJ5N1B%2bKgAkGQEpSVW6dWtFp6NU%3d&risl=&pid=ImgRaw&r=0"
+            width="200" height="200">
+
+        <h2>The Seven Year Slip</h2>
+
+        <p> The Seven Year Slip (by Ashley Poston):
+            A magical romance centered on an apartment that exists seven years in the past. When Clementine meets a
+            charming chef living in her apartment's past, she must navigate a long-distance relationship across time,
+            exploring themes of grief, timing, and finding oneself.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="book">
+        <img src="https://media.zid.store/thumbs/fe383165-6e0a-4ae0-b974-3e5cff958567/030ae1a1-db01-4b01-9900-b1ab6f97e2ab-thumbnail-770x770-70.jpg"
+            width="200" height="200">
+
+        <h2>The Midnight Library </h2>
+
+        <p>The Midnight Library (by Matt Haig):
+            A philosophical novel about Nora, who finds herself in a library between life and death. Each book allows
+            her to try a version of her life she could have lived, ultimately teaching a powerful lesson about
+            overcoming regret and finding value in one’s current existence</p>
+
+
+    </div>
+    <div class="book">
+        <img src="https://i.pinimg.com/1200x/75/15/9c/75159cb4604b6522a595eb3c0eff54a6.jpg" width="200" height="200">
+
+        <h2>The Reappearance of Rachel Price</h2>
+
+        <p> The Reappearance of Rachel Price (by Holly Jackson):
+            Years after Rachel Price vanished, she suddenly reappears while her family is filming a documentary about
+            her disappearance. Her daughter, Bel, is skeptical of her mother's story and begins a tense investigation to
+            uncover the truth of where she’s been.
+        </p>
+
+    </div>
+    <div class="book">
+        <img src="https://i.pinimg.com/736x/b0/1e/83/b01e839964c06cb1001963e0e2208f9c.jpg" width="200" height="200">
+
+        <h2>Ancient Wisdom</h2>
+
+        <p> Ancient Wisdom:
+            Typically referring to collections of teachings from Stoic, Eastern, or Greek philosophers, these works
+            focus on timeless principles like mindfulness, virtue, and resilience to help modern readers lead more
+            meaningful and balanced lives.
+        </p>
+
+    </div>
+    <div class="book">
+        <img src="https://i.pinimg.com/736x/6b/f2/e2/6bf2e2a9ff3c4e0febf8e2e0cdc9106e.jpg" width="200" height="200">
+
+
+        <h2>The Silk Roads</h2>
+
+        <p> The Silk Roads: A New History of the World (by Peter Frankopan):
+            A major re-evaluation of world history that shifts the focus away from the West and toward the East. It
+            explores how the trade routes of Central Asia shaped empires, religions, and the global economy from ancient
+            times to the present day.
+        </p>
+
+    </div>
+    <div class="book">
+        <img src="https://i.pinimg.com/736x/fc/2a/bb/fc2abb771ffb2df2deb2c988ca4214df.jpg" width="200" height="200">
+
+        <h2> Clean Code</h2>
+
+        <p> Clean Code (by Robert C. Martin):
+            A fundamental guide for software developers that outlines the principles and best practices for writing
+            high-quality code. It emphasizes that code should be written for humans to understand, focusing on clarity,
+            simplicity, and maintainability.
+        </p>
+
+    </div>
+    <footer>
+    <p>© 2026 BooK Fair – Reading world in your hands</p>
+</footer>
+    <script src="summary.js"></script>
+    <script src="darkMode.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+:root {
+  --bg1:        #b19e85;
+  --bg2:        #8d6e51;
+  --text:       #2d1409;
+  --text-sub:   #3e1e0c;
+  --btn:        #541308;
+  --btn-text:   #f5ede4;
+  --btn-hover:  #2d1409;
+  --nav-bg:     #8d6e51;
+  --nav-text:   #f5ede4;
+  --card-bg:    #f0e6d8;
+  --card-border:#8d6e51;
+  --footer-bg:  #8d6e51;
+}
+body.dark-mode {
+  --bg1:        #2d1409;
+  --bg2:        #541308;
+  --text:       #b19e85;
+  --text-sub:   #8d6e51;
+  --btn:        #8d6e51;
+  --btn-text:   #2d1409;
+  --btn-hover:  #b19e85;
+  --nav-bg:     #643f24;
+  --nav-text:   #b19e85;
+  --card-bg:    #3e1e0c;
+  --card-border:#643f24;
+  --footer-bg:  #643f24;
+}
+
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg1);
+  color: var(--text);
+  font-family: 'Lora', Georgia, serif;
+  line-height: 1.7;
+  transition: background-color 0.35s, color 0.35s;
+  animation: fadeInAnimation ease 0.5s;
+  scroll-behavior: smooth;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* ── Nav ── */
+nav {
+  background-color: var(--nav-bg);
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(45,20,9,0.25);
+  transition: background-color 0.35s;
+  text-align: left !important;
+  border-radius: 4px;
+}
+
+nav > span {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--nav-text);
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--nav-text);
+  text-decoration: none;
+  font-size: 0.82rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: var(--btn);
+  color: var(--btn-text);
+}
+
+.Interface-search-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: var(--btn);
+  color: var(--btn-text);
+  text-decoration: none;
+  padding: 7px 15px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.Interface-search-btn:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-1px);
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1.5px solid var(--nav-text);
+  color: var(--nav-text);
+  padding: 5px 13px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+
+.theme-toggle:hover {
+  background-color: var(--nav-text);
+  color: var(--nav-bg);
+}
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(135deg, var(--bg2) 0%, var(--bg1) 65%);
+  padding: 72px 24px 52px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.35s;
+}
+
+.hero::before {
+  content: '\1F4DA';
+  font-size: 180px;
+  position: absolute;
+  opacity: 0.07;
+  top: -10px;
+  right: -10px;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(2rem, 5vw, 3rem) !important;
+  font-weight: 700;
+  color: var(--text) !important;
+  margin-bottom: 14px !important;
+  position: relative;
+}
+
+.hero + div h4,
+body > div:nth-child(3) h4 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-sub);
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto 52px !important;
+  padding: 16px 20px 0;
+}
+
+/* ── Featured Books ── */
+.featured-book {
+  max-width: 1100px;
+  margin: 0 auto 52px;
+  padding: 0 24px;
+}
+
+#featuredBooks {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 22px;
+}
+
+
+.CATEGORIES {
+  text-align: center;
+  padding: 16px 16px 24px;
+}
+
+.CATEGORIES h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--text);
+  display: inline-block;
+  position: relative;
+}
+
+.CATEGORIES h2::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: var(--btn);
+  border-radius: 2px;
+  margin-top: 7px;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 22px;
+  max-width: 1000px;
+  margin: 0 auto 64px;
+  padding: 0 24px;
+}
+
+.cat-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 22px 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.22s, box-shadow 0.22s;
+  box-shadow: 0 3px 12px rgba(45,20,9,0.12);
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 26px rgba(45,20,9,0.18);
+}
+
+.cat-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: var(--bg2);
+}
+
+.cat-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.cat-card a { text-decoration: none; width: 100%; }
+
+.cat-card button {
+  width: 100%;
+  background-color: var(--btn);
+  color: var(--btn-text);
+  border: none;
+  padding: 9px 0;
+  border-radius: 6px;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.4px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.cat-card button:hover {
+  background-color: var(--btn-hover);
+  transform: scale(1.03);
+}
+
+/* ── CTA Section ── */
+section {
+  background-color: var(--bg2);
+  padding: 52px 24px;
+  text-align: center;
+  transition: background-color 0.35s;
+}
+
+section h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  color: var(--btn-text);
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.45;
+} 
+
+
+footer {
+  background-color: var(--footer-bg);
+  padding: 20px 16px;
+  transition: background-color 0.35s;
+}
+
+footer p {
+  color: var(--nav-text);
+  text-align: center;
+  font-size: 0.88rem;
+}
+
+
+

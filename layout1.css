@@ -1,0 +1,151 @@
+:root {
+    --bg-color:#b19e85;
+    --text-color: #000000;
+    --card-bg: #8d6e51;
+    --b-bg:  #541308;
+}
+.dark-mode {
+    --bg-color:#2d1409;
+    --text-color:#8d6e51;
+    --card-bg: #541308;
+    --b-bg:/*#B29E85*/#8d6e51;
+}
+body{
+    background-color: var(--bg-color);
+    padding: 0%;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 24px;
+}
+.layout{
+    padding: 5px 5px;
+}
+.welcome{
+    margin: 30px;
+    text-shadow: 5px 5px 20px #00000f;
+}
+.con {
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px;
+}
+.fan , .ph , .pr ,.H , .ro , .si , .cr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.con a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content:center ;
+    padding: 10% 0; 
+    transition: .3s;
+
+}
+.fan{
+    background-image: linear-gradient(to right , #98789D, #535294) ;
+    box-shadow:  10px 5px 11px -10px #00000f;
+}
+.cr{
+    background-image: linear-gradient(to right , #647066, #0B0B0B) ;
+    box-shadow:  10px 5px 11px -10px #00000f;
+}
+.si{
+    background-image: linear-gradient(to right , #C7D9E5, #2F4157) ;
+    box-shadow:  10px 5px 11px -10px #00000f;
+}
+.pr{
+    background-image: linear-gradient(to right , #22584C, #051e18) ;
+    box-shadow:  10px 5px 11px -10px #00000f;
+}
+.ro{
+    background-image: linear-gradient(to right , #F0B3BA, #C60726) ;
+    box-shadow:  10px 5px 11px -10px #00000f;
+}
+.H{
+    background-image: linear-gradient(to right , #DEBB83, #9D6536) ;
+    box-shadow:  10px 5px 11px -10px #00000f;
+}
+.ph{
+    background-image: linear-gradient(to right , #A5856E, #1f150f) ;
+    box-shadow:  10px 5px 11px -10px #00000f;
+}
+.fan:hover , .ph:hover , .pr:hover ,.H:hover , .ro:hover , .si:hover , .cr:hover{
+    transform: scale(1.03);
+    box-shadow:  13px 13px 11px -10px #00000f;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
+    gap: 40px;
+    margin: 20px;
+    justify-content: center;
+    padding: 50px;
+}
+.book{
+    display: flex;
+    background-color: var(--card-bg);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+.book:hover{
+    transform: scale(1.03);
+    box-shadow:  13px 13px 11px -10px #00000f;
+}
+.cover{
+    margin: 4% 4% 2%;
+    overflow: hidden;
+    width: 92%;
+    aspect-ratio: 2 / 3;
+}
+.book img{
+    object-fit:cover;
+    display:flex;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.b{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 92%;
+    justify-content: center;
+    padding-bottom:5px ;
+}
+.book button{
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--b-bg);
+    color: whitesmoke;
+    height: 100%;
+    cursor: pointer;
+}
+.book button:hover{
+    transform: scale(1.03);
+    box-shadow:  0px 13px 11px -10px #00000f;
+}
+.price{
+    padding:0%;
+    margin: 0%;
+    display: flex;
+    margin-bottom: 2%;
+}
+.price p{
+    padding:0%;
+    margin: 0%;
+    font-weight: bold;
+}

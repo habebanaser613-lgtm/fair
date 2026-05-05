@@ -1,0 +1,128 @@
+:root{
+    --footer-bg:  #8d6e51;
+    --nav-bg:     #8d6e51;
+    --nav-text:   #f5ede4;
+    --btn:        #541308;
+    --btn-text:   #f5ede4;
+    --btn-hover:  #2d1409;
+}
+.dark-mode{
+    --btn:        #8d6e51;
+    --btn-text:   #2d1409;
+    --btn-hover:  #b19e85;
+    --nav-bg:     #643f24;
+    --nav-text:   #b19e85;
+    --footer-bg:  #643f24;
+}
+nav {
+  background-color: var(--nav-bg);
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(45,20,9,0.25);
+  transition: background-color 0.35s;
+  text-align: left !important;
+}
+
+nav > span {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--nav-text);
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--nav-text);
+  text-decoration: none;
+  font-size: 0.82rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  font-weight: bolder;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: var(--btn);
+  color: var(--btn-text);
+}
+
+.Interface-search-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: var(--btn);
+  color: var(--btn-text);
+  text-decoration: none;
+  padding: 7px 15px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.Interface-search-btn:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-1px);
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1.5px solid var(--nav-text);
+  color: var(--nav-text);
+  padding: 5px 13px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+
+.theme-toggle:hover {
+  background-color: var(--nav-text);
+  color: var(--nav-bg);
+}
+.layout {
+  background: transparent;
+  border: 1.5px solid var(--nav-text);
+  color: var(--nav-text);
+  padding: 5px 13px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+
+.layout:hover {
+  background-color: var(--nav-text);
+  color: var(--nav-bg);
+}
+footer {
+  background-color: var(--footer-bg);
+  padding: 20px 16px;
+  transition: background-color 0.35s;
+}
+
+footer p {
+  color: var(--nav-text);
+  text-align: center;
+  font-size: 0.88rem;
+}

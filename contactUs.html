@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="navStyle.css">
+    <!-- <link rel="stylesheet" href="../Home/Home.css"> -->
+   <link rel="stylesheet" href="contactUs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <span>Book Fair</span>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="author.html">Authors</a>
+            <a href="bookCategories.html">Book Categories</a>
+            <a href="shop.html">Shop And Borrow</a>
+            <a href="summary.html">Summary</a>
+            <a href="contactUs.html" class="active">Contact Us</a>
+            <a href="signin.html">sign in</a>
+            <a href="profile.html">Profile</a>
+        </div>
+        <a href="" class="Interface-search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            Search Books
+        </a>
+        <button class="theme-toggle" id="themed">🌙 Dark Mode</button>
+        </nav>
+    <main>
+        <div class="main-container" id="Contact">
+
+            <div class="contact-info">
+                <h1>Contact Us</h1><br>
+                <form id="contactForm">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" id="subject" name="subject"><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4"></textarea><br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h2>Contact Details</h2>
+                <p class="vip">If you have any questions, feel free to reach out to us:</p><br>
+                <p>Email: contact@gmail.com</p>
+                <p>Phone: +123456789</p>
+                <p>Address: 123 Main St, City, Country</p><br>
+                <p class="vip">Follow us on:</p><br>
+                <span><i class="fab fa-facebook"></i></span>
+                <a href="#">Facebook</a><br>
+                <span><i class="fab fa-twitter"></i></span>
+                <a href="#">Twitter</a><br>
+                <span><i class="fab fa-instagram"></i></span>
+                <a href="#">Instagram</a><br>
+                <span><i class="fab fa-linkedin"></i></span>
+                <a href="#">LinkedIn</a><br>
+            </div>
+        </div>
+    </main>
+    <footer>
+    <p>© 2026 BooK Fair – Reading world in your hands</p>
+</footer>
+
+    <script src="contactUs.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="darkMode.js"></script>
+</body>
+
+</html>
