@@ -1,5 +1,3 @@
-
-/*====*/
 :root {
     --dark-brown: #2d1409;
     --primary-red-brown: #541308;
@@ -88,7 +86,6 @@ body.dark .navigation a { color: #cfa67b; }
 }
 .dark-mode-btn:hover { background: var(--primary-red-brown); }
 
-/* البنر او الصورة اللي في البداية */
 .main {
     position: relative;
     text-align: center;
@@ -221,13 +218,6 @@ body.dark .navigation a { color: #cfa67b; }
     text-align: center;
 }
 .icon { font-size: 2.5rem; margin-bottom: 15px; color: var(--btn-primary); }
-
-/* footer {
-    background: var(--footer-bg);
-    color: var(--footer-text);
-    text-align: center;
-    padding: 20px;
-} */
 .social-icons a {
     margin: 0 8px;
     color: var(--footer-text);

@@ -18,11 +18,13 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     const savedLayout = localStorage.getItem('layout');
+    const layoutLink = document.getElementById('lay');
 
     if (savedLayout) {
         setLayout(savedLayout);
     } else {
-        setLayout('layout1.css');
+        // setLayout('layout1.css');
+        layoutLink.setAttribute('href', 'layout1.css');
     }
 
     document.getElementById('btn').addEventListener('click', function () {
