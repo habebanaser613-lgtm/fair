@@ -68,6 +68,7 @@ h1 {
     border: 0px;
 }
 
+
 .buttons{
     display: flex;
     flex-direction: row;
@@ -106,6 +107,10 @@ h1 {
     padding: 20px 30px;
     border-radius: 15px;
     box-shadow: 0 4px 9px black;
+}
+.search-text::placeholder {
+    color: white;
+    opacity: 0.7;
 }
 
 
