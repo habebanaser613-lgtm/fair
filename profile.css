@@ -95,7 +95,7 @@ h2 {
   transform: scale(1.1);
 }
 
-button { 
+.card button { 
   background: var(--buttonC);
   /*color: var(--buttonT); */
   border: none; 
@@ -107,7 +107,7 @@ button {
   transition: 0.3s;
 } 
 
-button:hover { 
+.card button:hover { 
   transform: scale(1.05);
   background: var(--buttonH);
 } 

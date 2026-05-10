@@ -21,6 +21,7 @@
     --card-bg:    #f0e6d8;
     --card-border:#8d6e51;
     --footer-bg:  #8d6e51;
+    --button-bg-color:#8d6e51;
 }
 .dark-mode {
     --bg1:        #2d1409;
@@ -143,7 +144,7 @@ nav {
     width: 50%;
     text-align: center;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 50px;
 }
 .container .button button{
     background-color: var(--button-bg-color);
@@ -166,6 +167,9 @@ nav {
     text-align: center;
     padding: 20px 0px;
     border-radius: 20px;
+}
+.content{
+    margin-bottom:20px ;
 }
 .content input{
     border: none;
@@ -202,18 +206,19 @@ nav {
 .content h3{
     width: fit-content;
     font-size: 25px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
     color: var(--text);
 }
 .content a{
     text-decoration: none;
     color: var(--text);
     font-size: 20px;
-    padding-bottom: 20px;
-    margin-left: 735px;
-    padding-bottom: 20px;
+    width: 6%;
+    margin-left: 48%;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
     cursor: pointer;
     transition-duration: 0.5s;
 }

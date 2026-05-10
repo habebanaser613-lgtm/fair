@@ -18,7 +18,7 @@ new Chart(ctx, {
   data: {
     labels: ['Books', 'Pages'],
     datasets: [{
-      data: [14, 850],
+      data: [20, 250],
       backgroundColor: ['#541308', '#7b2d26'],
       borderRadius: 6
     }]
