@@ -10,19 +10,16 @@ body {
   justify-content: center;
 }
 
-/* صندوق عام */
 .container {
   width: 90%;
   max-width: 900px;
   text-align: center;
 }
 
-/* العناوين */
 h1, h2, h3 {
   color: #2d1409;
 }
 
-/* الكروت */
 .card {
   background-color: #b19e85;
   margin: 20px 0;
@@ -33,7 +30,6 @@ h1, h2, h3 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* الأعمدة */
 .columns {
   display: flex;
   justify-content: center;
@@ -41,12 +37,10 @@ h1, h2, h3 {
   flex-wrap: wrap;
 }
 
-/* كل عمود */
 .columns .card {
   width: 300px;
 }
 
-/* صورة البروفايل */
 .avatar {
   width: 100px;
   height: 100px;
@@ -57,7 +51,6 @@ h1, h2, h3 {
   border: 2px solid #643f24;
 }
 
-/* الأزرار */
 button {
   background-color: #541308;
   color: #b19e85;
@@ -72,7 +65,6 @@ button:hover {
   background-color: #643f24;
 }
 
-/* الفوتر */
 footer {
   margin-top: 20px;
   padding: 15px;
@@ -82,7 +74,6 @@ footer {
   border-radius: 10px;
 }
 
-/* Dark Mode */
 .dark {
   background-color: #2d1409;
   color: #b19e85;

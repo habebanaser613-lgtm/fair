@@ -25,7 +25,7 @@ new Chart(ctx, {
   },
   options: {
     responsive: true,
-    maintainAspectRatio: false, /*  مهم */
+    maintainAspectRatio: false,
     plugins: {
       legend: { display: false }
     },
