@@ -32,6 +32,24 @@
     }).then(() => {
         event.target.submit();
     });
+});
+
+
+document.getElementById('submittedData').innerHTML = `
+    <div class="submitted-box">
+        <h3>Submitted Information</h3>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Message:</strong> ${message}</p>
+    </div>
+`;
+
+Swal.fire({
+    icon: 'success',
+    title: 'Success!',
+    text: 'Your information has been submitted successfully!',
+    confirmButtonColor: '#3085d6'
 });*/
 
 
