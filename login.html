@@ -35,13 +35,13 @@
         <div class="logincontent">
             <form action="">
                 <label for="">First name:</label>
-                <input type="text" name="firstname">
+                <input type="text" name="firstname" required>
                 <label for="">Last name:</label>
-                <input type="text" name="lastname">
+                <input type="text" name="lastname" required>
                 <label for="">Email:</label>
-                <input type="text" name="email">
+                <input type="email" name="email" required>
                 <label for="">Password:</label>
-                <input type="password" name="password">
+                <input type="password" name="password" required minlength="8" maxlength="16">
                 <button>Confirm</button>
             </form>
         </div>
