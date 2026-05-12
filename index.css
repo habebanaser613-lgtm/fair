@@ -242,17 +242,19 @@ nav {
 }
 .logincontent input{
     border: none;
-    width: 50%;
+    width: 60%;
     border-radius: 5px;
-    padding: 3px 3px
+    padding: 3px 3px;
+    height: 30px;
 }
 .logincontent input:focus{
     outline: none;
 }
 .logincontent label{
+    width: 60%;
     display: flex;
-    margin-left: 118px;
-    padding: 10px 0px;
+    margin-left: 20%;
+    padding:10px 27% 10px 20% ;
     font-size: 20px;
     color:var(--labelC);
 }

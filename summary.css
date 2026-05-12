@@ -192,6 +192,8 @@ tr:hover {
 }
 
 .book-style {
+    background:rgb(145, 100, 71);
+    color: #772f08;
     border-radius: 8px;
     padding: 10px;
     width: 40%;

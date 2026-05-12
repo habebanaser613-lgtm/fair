@@ -1,37 +1,4 @@
-// const orderForm = document.getElementById('signIn');
 
-// if (orderForm) {
-//     orderForm.addEventListener('submit', function (e) {
-//         e.preventDefault();
-//         const name = document.getElementById('username').value.trim();
-//         const email = document.getElementById('email').value.trim();
-//         const password = document.getElementById('password').value;
-//         let isValid = true;
-//         if (name === "") {
-//             document.getElementById('firstname').textContent = "First Name is required!";
-//             isValid = false;
-//         } else {
-//             document.getElementById('firstname').textContent = "";
-//         }
-//         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//         if (!emailPattern.test(email)) {
-//             document.getElementById('emailError').textContent = "Please enter a valid email!";
-//             isValid = false;
-//         } else {
-//             document.getElementById('emailError').textContent = "";
-//         }
-//         if (password.length < 8) {
-//             document.getElementById('passError').textContent = "Password must be at least 8 characters!";
-//             isValid = false;
-//         } else {
-//             document.getElementById('passError').textContent = "";
-//         }
-//         if (isValid) {
-//             alert("Form Submitted Successfully!");
-//             orderForm.reset();
-//         }
-//     });
-// }
 
 
 const signInForm = document.getElementById('signIn');
@@ -141,10 +108,13 @@ if (signInForm) {
             localStorage.setItem('user', JSON.stringify(userData));
 
             Swal.fire({
+                backGroundColor:'#b19e85',
                 title: 'Success',
                 text: "Your Account has been made successfully",
                 icon: 'success',
-                confirmButtonText: 'okay'
+                iconColor:'#541308',
+                confirmButtonText: 'okay',
+                confirmButtonColor: "#541308",
             }).then((result) => {
                 if (result.isConfirmed) {
                     signInForm.reset();
@@ -165,18 +135,19 @@ const loginForm = document.getElementById('login');
 if (loginForm) {
     loginForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        const emailu = document.getElementById('checkemail').value.trim();
+        const unameu = document.getElementById('Uname').value.trim();
         const passu = document.getElementById('checkPass').value;
         const savedData = localStorage.getItem('user');
         const tryingu = JSON.parse(savedData);
         if (!tryingu) {
             Swal.fire('Error', 'No account found with these data', 'error');
         } 
-        else if (emailu === tryingu.email && passu === tryingu.pass) {
+        else if (unameu === tryingu.user && passu === tryingu.pass) {
             Swal.fire({
                 title: 'Welcome Back!',
                 text: `Hello ${tryingu.firstName}`,
                 icon: 'success',
+                iconColor:'#541308',
                 timer: 2000,
                 showConfirmButton: false
             }).then(() => {
@@ -184,7 +155,7 @@ if (loginForm) {
             });
         } 
         else {
-            Swal.fire('Oops!', 'Invalid Email or Password', 'error');
+            Swal.fire('Oops!', 'Invalid Email or Password', 'error' ,'#541308');
         }
     });
 }

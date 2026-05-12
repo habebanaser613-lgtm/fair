@@ -187,7 +187,6 @@ function add_To_Pur(bookName) {
     let book = allbooks.find(b => b.name === bookName);
     pur.push({ name: book.name, img: book.img, author: book.author });
     localStorage.setItem('purchased', JSON.stringify(pur));
-    // alert("Added to Cart!");
     d_Pur_List();
 }
 

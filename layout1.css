@@ -40,6 +40,7 @@ body{
     align-items: center;
     border-radius: 10px;
     box-shadow:  10px 5px 11px -10px #00000f;
+    transform: 0.5s ease, box-shadow 0.5s ease;
 }
 .con a {
     text-decoration: none;
@@ -60,6 +61,7 @@ body{
     height: 100%;
     border-radius: 10px;
     display: none;
+    transition: transform 2s;
 }
 .fan:hover ,.ro:hover ,.cr:hover ,.H:hover ,.ph:hover ,.pr:hover ,.si:hover{
     box-shadow:  10px 5px 11px -10px #00000f;
