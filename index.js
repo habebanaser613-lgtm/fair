@@ -180,7 +180,7 @@ if (loginForm) {
                 timer: 2000,
                 showConfirmButton: false
             }).then(() => {
-                window.location.href = "index.html";
+                window.location.href = "home.html";
             });
         } 
         else {
