@@ -273,6 +273,14 @@ nav {
     background-color: #2d1409;
     color:#b19e85;
 }
+.error-msg {
+    color: red;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 10px;
+    height: 15px;
+    padding: 2px;
+}
 @media (max-width:768px){
     .container {
         padding: 0 16px;

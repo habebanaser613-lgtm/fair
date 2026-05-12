@@ -25,16 +25,16 @@
     <div class="container">
         <h1>Log in to your account</h1>
         <div class="logincontent">
-            <form action="">
+            <form action="" id="login">
                 <label for="">First name:</label>
                 <input type="text" name="firstname" required>
                 <label for="">Last name:</label>
                 <input type="text" name="lastname" required>
                 <label for="">Email:</label>
-                <input type="email" name="email" required>
+                <input type="email" name="email" id="checkemail" required>
                 <label for="">Password:</label>
-                <input type="password" name="password" required minlength="8" maxlength="16">
-                <button>Confirm</button>
+                <input type="password" name="password" id="checkPass" required minlength="8" maxlength="16">
+                <button type="submit">Confirm</button>
             </form>
         </div>
     </div>
@@ -43,5 +43,6 @@
         </footer>
     <script src="index.js"></script>
     <script src="darkMode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
