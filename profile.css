@@ -183,3 +183,16 @@ canvas{
   width: 100% !important;
   height: 100% !important;
 }
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); 
+        width: 95%;
+        gap: 10px;
+    }
+    .medium, .wide {
+        grid-column: span 2; 
+    }
+    .bg-card {
+        display: none;
+    }
+}

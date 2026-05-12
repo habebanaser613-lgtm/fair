@@ -126,3 +126,28 @@ footer p {
   text-align: center;
   font-size: 0.88rem;
 }
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center !important;
+    }
+
+    .nav-links {
+        justify-content: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .theme-toggle, .layout {
+        width: 100%; 
+        justify-content: center;
+        margin-top: 5px;
+    }
+}
