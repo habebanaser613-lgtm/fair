@@ -143,10 +143,15 @@ const catbooks = [
     { name: "Refactoring", author: "Martin Fowler", price: 20.03, img: "Authors/programming/re.png" },
     { name: "Structure and Interpretation of Computer Programs", author: "Abelson & Sussman", price: 20.03, img: "Authors/programming/structure.png" },
     { name: "Compilers: Principles, Techniques, and Tools", author: "Aho & Ullman", price: 20.03, img: "Authors/programming/compil.png" }
-] 
+]
+
+// ارراي المشتريات و اراي الاستعارة
 let pur = [];  
 let bor = [];
 
+
+// فونكشن عرض الكتب من ارراي الاول
+//var displayBooks() {
 function d_Books() {
     let grid = document.getElementById("booksGrid");
     if (grid == null) return;
@@ -176,24 +181,28 @@ if (localStorage.getItem('purchased')) pur = JSON.parse(localStorage.getItem('pu
 
 if (localStorage.getItem('borrowed')) bor = JSON.parse(localStorage.getItem('borrowed'));
 
-
+// فونكشن عرض الكتاب اللي تم شراىه
 function add_To_Pur(bookName) {
   let allbooks = [...books, ...catbooks]
-    let book = /*books*/allbooks.find(b => b.name === bookName);
+    let book = allbooks.find(b => b.name === bookName);
     pur.push({ name: book.name, img: book.img, author: book.author });
     localStorage.setItem('purchased', JSON.stringify(pur));
-    alert("Added to Cart!");
+    // alert("Added to Cart!");
     d_Pur_List();
 }
 
+
+// فونكشن عرض الكتاب اللي تم استعارتها
 function add_To_Bor(bookName) {
   let allbooks = [...books, ...catbooks]
-    let book = /*books*/allbooks.find(b => b.name === bookName);
+    let book = allbooks.find(b => b.name === bookName);
     bor.push({ name: book.name, img: book.img, author: book.author });
     localStorage.setItem('borrowed', JSON.stringify(bor));
     d_Bor_List();
 }
 
+
+//  فونكشن تنسيق ال اتش تي ام ال للكتب المشتراه
 function d_Pur_List() {
 let container = document.getElementById('purchasedList');
     if (!container) return;
@@ -215,6 +224,9 @@ let b = pur[i];
     container.innerHTML = html;
 }
 
+
+// فونكشن تنسيق ال اتش تي ام ال للكتب المستعارة
+
 function d_Bor_List() {
     let container = document.getElementById('borrowedList');
     if (!container) return;
@@ -235,6 +247,8 @@ let b = bor[i];
 html += '</div>';
 container.innerHTML = html;
 }
+
+//  فونكشن الحدف
 function re_Pur(index) {
 pur.splice(index, 1);
 localStorage.setItem('purchased', JSON.stringify(pur));

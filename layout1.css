@@ -190,3 +190,7 @@ body{
     margin: 0%;
     font-weight: bold;
 }
+
+audio{
+    display: none;
+}
